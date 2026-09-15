@@ -21,6 +21,7 @@ The system captures hand gestures in real time, classifies the gesture using a t
 
 ## 🏗️ System Workflow
 
+```text
 Webcam
    ↓
 Capture Hand Gesture
@@ -38,4 +39,3 @@ Predicted Sign
 Text Output
    ↓
 Speech Output
-
