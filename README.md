@@ -39,3 +39,75 @@ Predicted Sign
 Text Output
    ↓
 Speech Output
+
+Sign-Language-Recognition/
+│
+├── dataset/
+│   ├── A/
+│   ├── B/
+│   ├── C/
+│   └── ...
+│
+├── model/
+│   └── trained_model.h5
+│
+├── training/
+│   └── train_model.py
+│
+├── src/
+│   ├── prediction.py
+│   ├── preprocessing.py
+│   └── text_to_speech.py
+│
+├── main.py
+├── requirements.txt
+└── README.md
+
+⚙️ Installation
+1. Clone the Repository
+git clone https://github.com/your-username/sign-language-recognition.git
+
+2. Navigate to the Project
+cd sign-language-recognition
+
+3. Create a Virtual Environment
+python -m venv venv
+Activate the environment on Windows:
+venv\Scripts\activate
+On Linux/macOS:
+source venv/bin/activate
+
+4. Install Dependencies
+pip install -r requirements.txt
+▶️ Running the Project
+Start the application using:
+python main.py
+
+📊 Recognition Pipeline
+
+          ┌──────────────┐
+          │    Webcam    │
+          └──────┬───────┘
+                 ↓
+        ┌──────────────────┐
+        │ Image Processing │
+        └────────┬─────────┘
+                 ↓
+        ┌──────────────────┐
+        │ Gesture Detection│
+        └────────┬─────────┘
+                 ↓
+        ┌──────────────────┐
+        │ Deep Learning    │
+        │ Classification   │
+        └────────┬─────────┘
+                 ↓
+        ┌──────────────────┐
+        │ Gesture / Letter │
+        └────────┬─────────┘
+                 ↓
+          ┌──────┴──────┐
+          ↓             ↓
+     ┌─────────┐   ┌───────────┐
+     │  Text   │   │   Speech  │
+     └─────────┘   └───────────┘
